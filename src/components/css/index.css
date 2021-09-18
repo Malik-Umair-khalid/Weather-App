@@ -1,0 +1,11 @@
+
+.main-heading{
+font-family: cursive;
+text-align: center;
+color: #8aaedf;
+}
+.main-div{
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid #0d1f3e;
+}

@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Weather from "./components/Weather";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Weather/>
   );
 }
 
 export default App;
+
+// navigator.geolocation.getCurrentPosition((location)=>{
+//   fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${location.coords.latitude}&lon=${location.coords.longitude}&appid=e1c32dd0eb29cd3b266f3b06ff7c70b4&units&units=metric`)
+//   .then(response => response.json())
+//   .then((info)=>{
+//     console.log(info)
+//   })
+// })
